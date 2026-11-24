@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serena Hotel Kampala</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <img src="serena-logo.png" alt="Serena Hotel Logo">
+
+    <div>
+        <a href="#rooms">Rooms</a>
+        <a href="#compare">Compare</a>
+        <a href="#booking">Booking</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Experience Luxury at the Heart of Kampala</h1>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+</section>
+
+<section id="rooms">
+    <h2>Our Rooms</h2>
+
+    <div class="room-container">
+
+        <div class="room-card">
+            <h3>Standard Room</h3>
+            <h2>UGX 350,000</h2>
+            <p>A comfortable room with modern facilities for a relaxing stay.</p>
+        </div>
+
+        <div class="room-card">
+            <h3>Deluxe Room</h3>
+            <h2>UGX 550,000</h2>
+            <p>A spacious room offering extra comfort and beautiful views.</p>
+        </div>
+
+        <div class="room-card">
+            <h3>Suite Room</h3>
+            <h2>UGX 900,000</h2>
+            <p>A luxurious suite with a separate living area and premium services.</p>
+        </div>
+
+        <div class="room-card">
+            <h3>Presidential Room</h3>
+            <h2>UGX 2,500,000</h2>
+            <p>An exclusive room offering the highest level of luxury and privacy.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="compare">
+    <h2>Room Comparison Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Standard</th>
+                <th>Deluxe</th>
+                <th>Suite</th>
+                <th>Presidential</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bed Type</td>
+                <td>Queen</td>
+                <td>King</td>
+                <td>King</td>
+                <td>Super King</td>
+            </tr>
+
+            <tr>
+                <td>Room Size (m²)</td>
+                <td>25</td>
+                <td>35</td>
+                <td>55</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Wi-Fi</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+            </tr>
+
+            <tr>
+                <td>Breakfast</td>
+                <td class="no">✗</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+            </tr>
+
+            <tr>
+                <td>Pool Access</td>
+                <td class="no">✗</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+            </tr>
+
+            <tr>
+                <td>Price/Night (UGX)</td>
+                <td>350,000</td>
+                <td>550,000</td>
+                <td>900,000</td>
+                <td>2,500,000</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="booking">
+    <h2>Book Your Stay</h2>
+    <p>Contact Serena Hotel Kampala to make your reservation.</p>
+</section>
+
+</body>
+</html>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #FFFFF0;
+    color: #333;
+}
+
+.navbar {
+    background: #800020;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #C9A84C;
+}
+
+.hero {
+    background-image: url("hero-serena.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #C9A84C;
+    color: #800020;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#rooms, #compare, #booking {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #800020;
+}
+
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.room-card {
+    background: white;
+    border: 1px solid #C9A84C;
+    padding: 25px;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.room-card h3 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+.room-card h2 {
+    color: #C9A84C;
+}
+
+.room-card p {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+thead {
+    background: #800020;
+    color: white;
+}
+
+.yes {
+    color: green;
+    font-weight: bold;
+}
+
+.no {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    .room-card {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
